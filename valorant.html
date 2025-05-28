@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALORANT BY HRISHI</title>
+    <link rel="icon" href="/images/mylogo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/tablogo.jpeg" type="image/x-icon">    
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            
+            
+            
+        }
+
+        header img{
+            width: 80px;
+            /* border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start; */
+            
+            
+        }
+
+        header nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 20px;
+            /* border: 1px solid red; */
+        }
+
+        nav a {
+            list-style-type: none;
+            text-decoration: none;
+            transform: scale(0.8);
+            transition: all ease-in-out;
+        }
+
+        nav a:hover{
+            background-color: red;
+            color: white;
+            transform: scale(1);
+            transition: all 1s;
+
+        }
+
+        section h1{
+            text-align: center;
+            margin: 10px 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+
+        }
+
+        /* main section{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+        } */
+
+        .cards{
+            border: 2px solid black;
+            width: 100%;
+            min-height: 100vh;
+            /* margin: 10px 10px; */
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            background: linear-gradient(to right,rgb(137, 62, 62),rgb(134, 51, 51),rgb(115, 12, 12));
+            
+        }
+
+        .card{
+            /* border: 1px solid red; */
+            width: 300px;
+            height: 605px;
+            overflow: hidden;
+            border-radius: 20px;
+            background-color: whitesmoke;
+            transform: scale(1);
+            transform: rotateX(0);
+            box-shadow: 0 8px 16px 0 silver ;
+            transition: all ease;
+            
+            /* transform: rotateZ(0); */
+        }
+
+        .card:hover{
+            border: 5px solid blueviolet;
+            transition: all 1s;
+            background-color: white;
+            transform: scale(1.1);
+            transform: rotateX(360deg);
+            /* transform: rotateZ(360deg); */
+        }
+
+        section:nth-of-type(2) .card{
+            transform: rotateY(0);
+        }
+
+        section:nth-of-type(2) .card:hover{
+            border: 5px solid blueviolet;
+            transition: all 1s;
+            background-color: white;
+            transform: rotateY(360deg);
+           
+        }
+
+        section:nth-of-type(3) .card{
+            transform: rotateZ(0);
+
+        }
+        
+        section:nth-of-type(3) .card:hover{
+            border: 5px solid blueviolet;
+            transition: all 1s;
+            background-color: white;
+            transform: rotateZ(360deg);
+        
+
+        }
+
+
+
+        section figure img{
+            width: 300px;
+            /* min-height: 300px; */
+            border: 1px solid brown;
+            /* overflow: hidden; */
+        }
+
+        section article{
+            margin: 10px;
+            /* border: 1px solid black; */
+            height: 602px;
+            
+        }
+
+        section article h3{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: blueviolet;
+        }
+        section article h5{
+            padding: 1px;
+            color: red;
+            
+        }
+        section article p{
+            color: purple;
+            font-family: 'Times New Roman', Times, serif ;
+        }
+
+        @media (max-width:480px){
+            header{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            main {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/images/riotgames.png" alt="logo">
+        <nav>
+            <a href="https://playvalorant.com/en-us/" target="_blank"><li>GAME INFO</li></a>
+            <a href="https://playvalorant.com/en-us/media/" target="_blank"><li>MEDIA</li></a>
+            <a href="https://playvalorant.com/en-us/news/" target="_blank"><li>NEWS</li></a>
+            <a href="https://support-valorant.riotgames.com/hc/en-us/" target="_blank"><li>SUPPORT</li></a>
+            <a href="https://playvalorant.com/en-us/news/esports/valorant-ignition-series/" target="_blank"><li>IGNITION SERIES</li></a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Agents</h1>
+            <div class="cards">
+                <div class="card">
+                   <figure>
+                    <a href="https://playvalorant.com/en-us/agents/jett/" target="_blank">
+                        <img src="/images/jett.jpg" alt="jett">
+                    </a>
+                    
+                   </figure>
+                    <article>
+                        <h1>JETT</h1>
+                    <h3>SPECIAL ABILITIES</h3>
+                    <h5>UPDRAFT</h5>
+                    <p>INSTANTLY propel Jett high into air.</p>
+                    <h5>TAILWIND</h5>
+                    <p>ACTIVATE to prepare a gust of wind for a limited time. RE-USE the wind to propel Jett in the direction she is moving. If Jett is standing still, she propels forward. Tailwind charge resets every two kills.</p>
+                    <h5>CLOUDBRUST</h5>
+                    <p>INSTANTLY throw a projectile that expands into a brief vision-blocking cloud on impact with a surface. HOLD the ability key to curve the smoke in the direction of your crosshair.</p>
+                    <h5>BLADE STORM</h5>
+                    <p>EQUIP a set of highly accurate throwing knives. FIRE to throw a single knife and recharge knives on a kill. ALT FIRE to throw all remaining daggers but does not recharge on a kill.</p>
+
+                    </article>
+
+                </div>
+
+                <div class="card">
+                    <figure>
+                        <a href="https://playvalorant.com/en-us/agents/reyna/" target="_blank">
+                            <img src="/images/reyna.jpg" alt="reyna">
+                        </a>
+                    </figure>
+                     <article>
+                         <h1>REYNA</h1>
+                     <h3>SPECIAL ABILITIES</h3>
+                     <h5>DEVOUR</h5>
+                     <p>Enemies killed by Reyna leave behind Soul Orbs that last 3 seconds. INSTANTLY consume a nearby soul orb, rapidly healing for a short duration. Health gained through this skill exceeding 100 will decay over time. If EMPRESS is active, this skill will automatically cast and not consume the orb.</p>
+                     <h5>DISMISS</h5>
+                     <p>INSTANTLY consume a nearby soul orb, becoming intangible for a short duration. If EMPRESS is active, also become invisible.</p>
+                     <h5>LEER</h5>
+                     <p>EQUIP an ethereal destructible eye. ACTIVATE to cast the eye a short distance forward. The eye will Nearsight all enemies who look at it.</p>
+                     <h5>EMPRESS</h5>
+                     <p>INSTANTLY enter a frenzy, increasing firing speed, equip and reload speed dramatically. Scoring a kill renews the duration.</p>
+ 
+                     </article>
+ 
+                 </div>
+
+                 <div class="card">
+                    <figure>
+                        <a href="https://playvalorant.com/en-us/agents/phoenix/" target="_blank">
+                            <img src="/images/pheonix.jpg" alt="pheonix">
+                        </a>
+                    </figure>
+                    <article>
+                    <h1>PHEONIX</h1>
+                     <h3>SPECIAL ABILITIES</h3>
+                     <h5>CURVEBALL</h5>
+                     <p>EQUIP a flare orb that takes a curving path and detonates shortly after throwing. FIRE to curve the flare orb to the left, detonating and blinding any player who sees the orb. ALTERNATE FIRE to curve the flare orb to the right.</p>
+                     <h5>HOT HANDS</h5>
+                     <p>EQUIP a fireball. FIRE to throw a fireball that explodes after a set amount of time or upon hitting the ground, creating a lingering fire zone that damages enemies.</p>
+                     <h5>BLAZE</h5>
+                     <p>EQUIP a flame wall. FIRE to create a line of flame that moves forward, creating a wall of fire that blocks vision and damages players passing through it. HOLD FIRE to bend the wall in the direction of your crosshair.</p>
+                     <h5>RUN IT BACK</h5>
+                     <p>INSTANTLY place a marker at Phoenix’s location. While this ability is active, dying or allowing the timer to expire will end this ability and bring Phoenix back to this location with full health.</p>
+ 
+                     </article>
+ 
+                 </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="cards">
+                <div class="card">
+                    <figure>
+                        <a href="https://playvalorant.com/en-us/agents/neon/" target="_blank">
+                            <img src="/images/neon.jpg" alt="neon">
+                        </a>
+                    </figure>
+                     <article>
+                    <h1>NEON</h1>
+                     <h3>SPECIAL ABILITIES</h3>
+                     <h5>RELAY BOLT</h5>
+                     <p>INSTANTLY throw an energy bolt that bounces once. Upon hitting each surface, the bolt electrifies the ground below with a concussive blast.</p>
+                     <h5>HIGH GEAR</h5>
+                     <p>INSTANTLY channel Neon’s power for increased speed. When charged, ALT FIRE to trigger an electric slide. Slide charge resets every two kills.</p>
+                     <h5>FAST LANE</h5>
+                     <p>FIRE two energy lines forward on the ground that extend a short distance or until they hit a surface. The lines rise into walls of static electricity that block vision and damage enemies passing through them.</p>
+                     <h5>OVERDRIVE</h5>
+                     <p>Unleash Neon’s full power and speed for a short duration. FIRE to channel the power into a deadly lightning beam with high movement accuracy. The duration resets on each kill.</p>
+ 
+                     </article>
+ 
+                 </div>
+
+                 <div class="card">
+                    <figure>
+                        <a href="https://playvalorant.com/en-us/agents/raze/" target="_blank">
+                            <img src="/images/raze.jpg" alt="raze">
+                        </a>
+                    </figure>
+                     <article>
+                    <h1>RAZE</h1>
+                     <h3>SPECIAL ABILITIES</h3>
+                     <h5>BLAST PACK</h5>
+                     <p>INSTANTLY throw a Blast Pack that will stick to surfaces. RE-USE the ability after deployment to detonate, damaging and moving anything hit. Raze isn't damaged by this ability, but will still take fall damage if launched up far enough.</p>
+                     <h5>PAINT SHELLS</h5>
+                     <p>EQUIP a cluster grenade. FIRE to throw the grenade, which does damage and creates sub-munitions, each doing damage to anyone in their range. ALT FIRE to lob. Paint Shells charge resets every two kills.</p>
+                     <h5>BOOM BOT</h5>
+                     <p>EQUIP a Boom Bot. FIRE will deploy the bot, causing it to travel in a straight line on the ground, bouncing off walls. The Boom Bot will lock on to any enemies in its frontal cone and chase them, exploding for heavy damage if it reaches them.</p>
+                     <h5>SHOWSTOPPER</h5>
+                     <p>EQUIP a rocket launcher. FIRE to shoot a rocket that does massive area damage on contact with anything.</p>
+ 
+                     </article>
+ 
+                 </div>
+
+                 <div class="card">
+                    <figure>
+                        <a href="https://playvalorant.com/en-us/agents/yoru/" target="_blank">
+                            <img src="/images/yoru.jpg" alt="yoru">
+                        </a>
+                    </figure>
+                     <article>
+                    <h1>YORU</h1>
+                     <h3>SPECIAL ABILITIES</h3>
+                     <h5>BLINDSIDE</h5>
+                     <p>EQUIP to rip an unstable dimensional fragment from reality. FIRE to throw the fragment, activating a flash that winds up once it collides with a hard surface in world.</p>
+                     <h5>GATECRASH</h5>
+                     <p>EQUIP a rift tether FIRE to send the tether forward. ALT FIRE to place a stationary tether. ACTIVATE to teleport to the tether's location. USE to trigger a fake teleport.</p>
+                     <h5>FAKEOUT</h5>
+                     <p>EQUIP an echo that transforms into a mirror image of Yoru when activated FIRE to instantly activate the mirror image and send it forward ALT FIRE to place an inactive echo USE to transform an inactive echo into a mirror image and send it forward.</p>
+                     <h5>DIMENSIONAL DRIFT</h5>
+                     <p>EQUIP a mask that can see between dimensions. FIRE to drift into Yoru's dimension, unable to be affected or seen by enemies from the outside.</p>
+ 
+                     </article>
+ 
+                 </div>
+
+
+            </div>
+        </section>
+
+        <section>
+            <div class="cards">
+                <div class="card">
+                    <figure>
+                        <a href="https://playvalorant.com/en-us/agents/omen/" target="_blank">
+                            <img src="/images/omen.jpg" alt="omen">
+
+                        </a>
+                    </figure>
+                     <article>
+                    <h1>OMEN</h1>
+                     <h3>SPECIAL ABILITIES</h3>
+                     <h5>PARANOIA</h5>
+                     <p>INSTANTLY fire a shadow projectile forward, briefly reducing the vision range of all players it touches. This projectile can pass straight through walls.</p>
+                     <h5>DARK COVER</h5>
+                     <p>EQUIP a shadow orb, entering a phased world to place and target the orbs. PRESS the ability key to throw the shadow orb to the marked location, creating a long-lasting shadow sphere that blocks vision. HOLD FIRE while targeting to move the marker further away.</p>
+                     <h5>SHROUDED STEP</h5>
+                     <p>EQUIP a shadow walk ability and see its range indicator. FIRE to begin a brief channel, then teleport to the marked location.</p>
+                     <h5>FROM THE SHADOWS</h5>
+                     <p>EQUIP a tactical map. FIRE to begin teleporting to the selected location. While teleporting, Omen will appear as a Shade that can be destroyed by an enemy to cancel his teleport.</p>
+ 
+                     </article>
+ 
+                 </div>
+
+                 <div class="card">
+                    <figure>
+                        <a href="https://playvalorant.com/en-us/agents/chamber/" target="_blank">
+                            <img src="/images/chamber.jpg" alt="chamber">
+
+                        </a>
+                    </figure>
+                     <article>
+                    <h1>CHAMBER</h1>
+                     <h3>SPECIAL ABILITIES</h3>
+                     <h5>HEADHUNTER</h5>
+                     <p>ACTIVATE to equip a heavy pistol. ALT FIRE with the pistol equipped to aim down sights.</p>
+                     <h5>RENDEZVOUS</h5>
+                     <p>EQUIP a teleport anchor. FIRE to place it on the ground. While on the ground and in range of the anchor, REACTIVATE to quickly teleport to the anchor.</p>
+                     <h5>TRADEMARK</h5>
+                     <p>EQUIP a trap that scans for enemies. FIRE to place it on the ground. When a visible enemy comes in range, the trap counts down and then destabilizes the terrain around them, creating a lingering field that Slows players caught inside of it. </p>
+                     <h5>TOUR DE FORCE</h5>
+                     <p>ACTIVATE to summon a powerful, custom sniper rifle that will kill an enemy with any direct hit to the upper body. ALT FIRE to aim down sights. Killing an enemy creates a lingering field that Slows players caught inside of it.</p>
+    
+                     </article>
+    
+                 </div>
+
+                 <div class="card">
+                    <figure>
+                        <a href="https://playvalorant.com/en-us/agents/gekko/" target="_blank">
+                            <img src="/images/gekko.jpg" alt="gekko">
+                        </a>
+                    </figure>
+                     <article>
+                    <h1>GEKKO</h1>
+                     <h3>SPECIAL ABILITIES</h3>
+                     <h5>WINGMAN</h5>
+                     <p>QUIP Wingman FIRE to send Wingman forward seeking enemies. Wingman unleashes a concussive blast toward the first enemy he sees ALT FIRE when targeting a Spike site or planted Spike to have Wingman defuse or plant the Spike.</p>
+                     <h5>DIZZY</h5>
+                     <p>EQUIP Dizzy FIRE to send Dizzy soaring forward through the air. Dizzy charges then unleashes plasma blasts at enemies in line of sight.</p>
+                     <h5>MOSH PIT</h5>
+                     <p>EQUIP Mosh FIRE to throw Mosh like a grenade ALT FIRE to throw underhand. Upon landing Mosh duplicates across a large area then after a short delay explodes.</p>
+                     <h5>THRASH</h5>
+                     <p>EQUIP Thrash FIRE to link with Thrash’s mind and steer her through enemy territory ACTIVATE to lunge forward and explode, detaining any enemies in a small radius. When Thrash expires she reverts into a dormant globule INTERACT to reclaim the globule and gain another Thrash charge after a short cooldown. Thrash can be reclaimed once.</p>
+    
+                     </article>
+    
+                 </div>
+                
+                </div>
+        </section>
+    </main>
+</body>
+</html>
